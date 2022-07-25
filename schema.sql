@@ -55,3 +55,13 @@ FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
 );
 
 SELECT * FROM departments;
+
+
+-- Updated Titles Table code with Juana for Mod 7 Lesson 2
+CREATE TABLE titles (
+	emp_no INT NOT NULL,
+	title VARCHAR NOT NULL, 
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no));
+
